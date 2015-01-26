@@ -7,12 +7,12 @@
   <% end %>
 </ul>
 <hr>
-<h1>Sign Up</h1>
+<h2>Wanna be on the list?</h2>
 <%= form_for @person do |f| %>
   <div class='form-group'>
     <%= f.label :name %>
     <%= f.text_field :name, class: "" %>
   </div>
 
-  <%= f.submit "Submit", class: "btn btn-success" %>
+  <%= f.submit "Add me to the List", class: "btn btn-success" %>
 <% end %>
