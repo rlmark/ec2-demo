@@ -7,6 +7,18 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 gem "rails_12factor"
 
+group :development do
+  gem 'capistrano'
+  gem 'capistrano-rvm'
+  gem 'capistrano-bundler'
+  gem 'capistrano-rails'
+end
+
+gem 'capistrano-passenger'
+
+gem 'therubyracer', platforms: :ruby
+
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'

@@ -80,6 +80,6 @@ test:
 #
 production:
   <<: *default
-  database: waitlist_production
+  database: app_production
   username: waitlist
   password: <%= ENV['WAITLIST_DATABASE_PASSWORD'] %>
